@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Java,安装,jdk," />
+  <meta name="keywords" content="Java,内存,jvm," />
 
 
 
@@ -80,19 +80,21 @@
 
 
 
-<meta name="description" content="jdk下载这个到java的官方网站下载自己需要的版本就好了，这里下载了jdk1.7版本的，选择下载了rpm包jdk-7u79-linux-x64.rpm。
-rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
+<meta name="description" content="学习Java不可避免的要学习Java虚拟机，也就是JVM，Java虚拟机规范里面规定了程序运行期间会使用到的运行时数据区，这也是JVM的内存区域划分的模型，应该可以这么理解吧。
+这其中有一些是随着虚拟机的启动和退出而创建和销毁的，这些区域是线程共享的，另外有一些是跟各个线程绑定的，随着线程的开始和结束而创建和销毁，我们可以称这些区域是线程私有的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux环境下RPM方式JDK安装及配置">
-<meta property="og:url" content="http://blog.hotsky.site/2015/11/25/jdk-install/index.html">
+<meta property="og:title" content="JVM内存区域划分">
+<meta property="og:url" content="http://blog.hotsky.site/2016/04/09/JVM-memory-area/index.html">
 <meta property="og:site_name" content="Hotsky">
-<meta property="og:description" content="jdk下载这个到java的官方网站下载自己需要的版本就好了，这里下载了jdk1.7版本的，选择下载了rpm包jdk-7u79-linux-x64.rpm。
-rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
-<meta property="og:updated_time" content="2016-03-17T12:34:48.000Z">
+<meta property="og:description" content="学习Java不可避免的要学习Java虚拟机，也就是JVM，Java虚拟机规范里面规定了程序运行期间会使用到的运行时数据区，这也是JVM的内存区域划分的模型，应该可以这么理解吧。
+这其中有一些是随着虚拟机的启动和退出而创建和销毁的，这些区域是线程共享的，另外有一些是跟各个线程绑定的，随着线程的开始和结束而创建和销毁，我们可以称这些区域是线程私有的。">
+<meta property="og:image" content="https://raw.githubusercontent.com/HotskyKO/blogresource/master/JVMDataArea.png">
+<meta property="og:updated_time" content="2016-04-09T08:46:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux环境下RPM方式JDK安装及配置">
-<meta name="twitter:description" content="jdk下载这个到java的官方网站下载自己需要的版本就好了，这里下载了jdk1.7版本的，选择下载了rpm包jdk-7u79-linux-x64.rpm。
-rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
+<meta name="twitter:title" content="JVM内存区域划分">
+<meta name="twitter:description" content="学习Java不可避免的要学习Java虚拟机，也就是JVM，Java虚拟机规范里面规定了程序运行期间会使用到的运行时数据区，这也是JVM的内存区域划分的模型，应该可以这么理解吧。
+这其中有一些是随着虚拟机的启动和退出而创建和销毁的，这些区域是线程共享的，另外有一些是跟各个线程绑定的，随着线程的开始和结束而创建和销毁，我们可以称这些区域是线程私有的。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HotskyKO/blogresource/master/JVMDataArea.png">
 
 
 
@@ -110,7 +112,7 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
   };
 </script>
 
-  <title> Linux环境下RPM方式JDK安装及配置 | Hotsky </title>
+  <title> JVM内存区域划分 | Hotsky </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -269,7 +271,7 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
             
             
               
-                Linux环境下RPM方式JDK安装及配置
+                JVM内存区域划分
               
             
           </h1>
@@ -281,8 +283,8 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-11-25T13:48:22+08:00" content="2015-11-25">
-              2015-11-25
+            <time itemprop="dateCreated" datetime="2016-04-09T15:20:35+08:00" content="2016-04-09">
+              2016-04-09
             </time>
           </span>
 
@@ -311,8 +313,8 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/11/25/jdk-install/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/25/jdk-install/" itemprop="commentsCount"></span>
+                <a href="/2016/04/09/JVM-memory-area/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/09/JVM-memory-area/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -322,7 +324,7 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
 
           
           
-             <span id="/2015/11/25/jdk-install/" class="leancloud_visitors" data-flag-title="Linux环境下RPM方式JDK安装及配置">
+             <span id="/2016/04/09/JVM-memory-area/" class="leancloud_visitors" data-flag-title="JVM内存区域划分">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -343,15 +345,22 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
       
 
       
-        <h4 id="jdk下载"><a href="#jdk下载" class="headerlink" title="jdk下载"></a>jdk下载</h4><p>这个到java的<a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html" target="_blank" rel="external">官方网站</a>下载自己需要的版本就好了，这里下载了jdk1.7版本的，选择下载了rpm包jdk-7u79-linux-x64.rpm。<br><br></p>
-<h4 id="rpm安装"><a href="#rpm安装" class="headerlink" title="rpm安装"></a>rpm安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><strong><em>解释一下：</em></strong><br>-i,–install  表示安装软件包 install package(s)<br>-v,–verbose  表示安装过程中输出软件包更多的信息 provide more detailed output<br>-h,–hash     表示显示安装进度 print hash marks as package installs (good with -v)<br><br></p>
-<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
-<p>在最后添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/java/jdk1.7.0_79</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib</span><br></pre></td></tr></table></figure></p>
-<p>保存文件，然后执行以下命令使配置文件生效即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p>
-<p>最后测试一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># java -version</span><br><span class="line">java version &quot;1.7.0_79&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.7.0_79-b15)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 24.79-b02, mixed mode)</span><br></pre></td></tr></table></figure></p>
-<p><strong>至此，安装完成！</strong></p>
+        <p>学习Java不可避免的要学习Java虚拟机，也就是JVM，Java虚拟机规范里面规定了程序运行期间会使用到的运行时数据区，这也是JVM的内存区域划分的模型，应该可以这么理解吧。</p>
+<p>这其中有一些是随着虚拟机的启动和退出而创建和销毁的，这些区域是线程共享的，另外有一些是跟各个线程绑定的，随着线程的开始和结束而创建和销毁，我们可以称这些区域是线程私有的。<br><a id="more"></a></p>
+<p>根据《Java虚拟机规范Java SE 7版》和《Java虚拟机规范Java SE 8版》的规定，我们可以划分出如下几个运行时数据区，如下图所示：<br><img src="https://raw.githubusercontent.com/HotskyKO/blogresource/master/JVMDataArea.png" alt=""></p>
+<h3 id="Java堆"><a href="#Java堆" class="headerlink" title="Java堆"></a>Java堆</h3><p>在Java虚拟机中，堆是可供各个线程共享的运行时内存区域，也是供所有类实例和数组对象分配内存的区域。这块区域随着虚拟机的启动而创建，它的唯一使命就是<strong>存放对象实例</strong>，这块区域也是GC主要关注的地方。</p>
+<p>下面的就是我的笔记本上的JVM堆的划分情况，可以看到分为新生代、老年代和永久代，新生代里面有可以分为Eden Space、From Survivor Space和To Survivor Space。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Heap Usage:</span><br><span class="line">PS Young Generation</span><br><span class="line">Eden Space:</span><br><span class="line">   capacity = 17301504 (16.5MB)</span><br><span class="line">   used     = 2483088 (2.3680572509765625MB)</span><br><span class="line">   free     = 14818416 (14.131942749023438MB)</span><br><span class="line">   14.351862127130682% used</span><br><span class="line">From Space:</span><br><span class="line">   capacity = 2621440 (2.5MB)</span><br><span class="line">   used     = 2615312 (2.4941558837890625MB)</span><br><span class="line">   free     = 6128 (0.0058441162109375MB)</span><br><span class="line">   99.7662353515625% used</span><br><span class="line">To Space:</span><br><span class="line">   capacity = 6291456 (6.0MB)</span><br><span class="line">   used     = 0 (0.0MB)</span><br><span class="line">   free     = 6291456 (6.0MB)</span><br><span class="line">   0.0% used</span><br><span class="line">PS Old Generation</span><br><span class="line">   capacity = 44564480 (42.5MB)</span><br><span class="line">   used     = 13316368 (12.699478149414062MB)</span><br><span class="line">   free     = 31248112 (29.800521850585938MB)</span><br><span class="line">   29.88112505744485% used</span><br><span class="line">PS Perm Generation</span><br><span class="line">   capacity = 22020096 (21.0MB)</span><br><span class="line">   used     = 14907008 (14.2164306640625MB)</span><br><span class="line">   free     = 7113088 (6.7835693359375MB)</span><br><span class="line">   67.6972888764881% used</span><br></pre></td></tr></table></figure></p>
+<p>根据虚拟机规范的规定，Java堆可以是固定的大小也可以是按照需求动态扩展的，而且不需要保证是连续的。</p>
+<p><strong>存放内容：</strong>所有的对象实例和数组。</p>
+<h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p>方法区是一个线程共享的区域，它用于存储已被虚拟机加载的类信息、常量、静态变量。方法区是堆的逻辑组成部分，Hotspot用永久代实现了方法区。<br>方法区还包含运行时常量池，用于存放编译时生成的各种字面量和符号引用，但是不要求常量一定是在编译时期产生的，运行期间也可以将新的常量放入池中，比如String的intern()方法便是利用了这一特性。</p>
+<p><strong>存放内容：</strong>类的结构信息，如类的字段、方法、接口、构造函数，还有运行时常量池等。</p>
+<h3 id="程序计数寄存器"><a href="#程序计数寄存器" class="headerlink" title="程序计数寄存器"></a>程序计数寄存器</h3><p>这块区域是每个线程独立拥有的，也就是线程私有的，我们可以把它看作是当前线程所执行的字节码的行号指示器。</p>
+<p><strong>这块区域时虚拟机规范里面唯一一个没有规定任何OutOfMemoryError情况的区域。</strong></p>
+<p><strong>存放内容：</strong>如果线程执行的是一个Java方法，那么寄存器里面记录的就是正在执行的虚拟机字节码指令的地址，如果线程执行的是一个native方法，那么寄存器记录的值为undefined。</p>
+<h3 id="虚拟机栈"><a href="#虚拟机栈" class="headerlink" title="虚拟机栈"></a>虚拟机栈</h3><p>虚拟机栈也是线程私有的内存区域。每个方法在执行的时候都会创建一个栈帧用于存储局部变量表、操作数栈、方法出口等信息，每一个方法从调用到执行完成就是一个栈帧入栈和出栈的过程。</p>
+<p>局部变量表存放了编译时期可知的各种基本数据类型、对象引用和指向了一条字节码指令的地址。</p>
+<p><strong>存放内容：</strong>局部变量表、操作数栈、方法出口等信息。</p>
+<h3 id="本地方法栈"><a href="#本地方法栈" class="headerlink" title="本地方法栈"></a>本地方法栈</h3><p>和虚拟机栈类似，存储Native方法的相关信息。<br><strong>存放内容：</strong>局部变量表、操作数栈、方法出口等信息。</p>
 
       
     </div>
@@ -374,9 +383,9 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
           
             <a href="/tags/Java/" rel="tag">#Java</a>
           
-            <a href="/tags/安装/" rel="tag">#安装</a>
+            <a href="/tags/内存/" rel="tag">#内存</a>
           
-            <a href="/tags/jdk/" rel="tag">#jdk</a>
+            <a href="/tags/jvm/" rel="tag">#jvm</a>
           
         </div>
       
@@ -385,17 +394,13 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/17/hexo-setup/" rel="next" title="用Hexo搭建属于自己的Blog">
-                <i class="fa fa-chevron-left"></i> 用Hexo搭建属于自己的Blog
+              <a href="/2016/03/17/iterm2-with-ohmyzsh/" rel="next" title="iTerm2和oh-my-zsh的个性化定制">
+                <i class="fa fa-chevron-left"></i> iTerm2和oh-my-zsh的个性化定制
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/05/git-install-with-source/" rel="prev" title="通过源码安装最新版Git">
-                通过源码安装最新版Git <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -410,10 +415,10 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/11/25/jdk-install/"
-     data-title="Linux环境下RPM方式JDK安装及配置"
+        <div class="ds-share flat" data-thread-key="2016/04/09/JVM-memory-area/"
+     data-title="JVM内存区域划分"
      data-content=""
-     data-url="http://blog.hotsky.site/2015/11/25/jdk-install/">
+     data-url="http://blog.hotsky.site/2016/04/09/JVM-memory-area/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -440,8 +445,8 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/25/jdk-install/"
-           data-title="Linux环境下RPM方式JDK安装及配置" data-url="http://blog.hotsky.site/2015/11/25/jdk-install/">
+      <div class="ds-thread" data-thread-key="2016/04/09/JVM-memory-area/"
+           data-title="JVM内存区域划分" data-url="http://blog.hotsky.site/2016/04/09/JVM-memory-area/">
       </div>
     
   </div>
@@ -545,7 +550,7 @@ rpm安装1rpm -ivh jdk安装包的目录/jdk-7u79-linux-x64.rpm">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#jdk下载"><span class="nav-number">1.</span> <span class="nav-text">jdk下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rpm安装"><span class="nav-number">2.</span> <span class="nav-text">rpm安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置环境变量"><span class="nav-number">3.</span> <span class="nav-text">配置环境变量</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java堆"><span class="nav-number">1.</span> <span class="nav-text">Java堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法区"><span class="nav-number">2.</span> <span class="nav-text">方法区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序计数寄存器"><span class="nav-number">3.</span> <span class="nav-text">程序计数寄存器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟机栈"><span class="nav-number">4.</span> <span class="nav-text">虚拟机栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地方法栈"><span class="nav-number">5.</span> <span class="nav-text">本地方法栈</span></a></li></ol></div>
             
           </div>
         </section>
