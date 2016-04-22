@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hotsky.site/"/>
-  <updated>2016-04-12T13:24:37.000Z</updated>
+  <updated>2016-04-21T14:21:58.000Z</updated>
   <id>http://blog.hotsky.site/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JVM内存回收对象及引用分析</title>
+    <link href="http://blog.hotsky.site/2016/04/21/jvm-gc-objectreference/"/>
+    <id>http://blog.hotsky.site/2016/04/21/jvm-gc-objectreference/</id>
+    <published>2016-04-21T13:58:36.000Z</published>
+    <updated>2016-04-21T14:21:58.000Z</updated>
+    
+    <content type="html">&lt;p&gt;自动垃圾回收是Java相较于C++的一个重要的特点，想了解JVM的垃圾回收机制，首先我们要知道垃圾回收是回收什么地方的垃圾，我在我的上一篇博客《&lt;a href=&quot;http://blog.hotsky.site/2016/04/09/JVM-memory-area/&quot;&gt;JVM内存区域划分&lt;/a&gt;》里面有写到JVM里面的内存是怎么分布的，这里的回收主要是指对上文中提到的Java堆和方法区的内存的回收。&lt;/p&gt;
+&lt;h3 id=&quot;什么样的对象可以被回收&quot;&gt;&lt;a href=&quot;#什么样的对象可以被回收&quot; class=&quot;headerlink&quot; title=&quot;什么样的对象可以被回收&quot;&gt;&lt;/a&gt;什么样的对象可以被回收&lt;/h3&gt;&lt;p&gt;知道了回收哪里的内存之后，我们还需要知道什么样的对象是可以被回收，或者说是需要被回收的，这些对象我们称之为死掉的对象。那么哪些对象是死掉了的呢？我们说当一个对象不存在任何引用的时候就可以说这个对象是死掉了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自动垃圾回收是Java相较于C++的一个重要的特点，想了解JVM的垃圾回收机制，首先我们要知道垃圾回收是回收什么地方的垃圾，我在我的上一篇博客《&lt;a href=&quot;http://blog.hotsky.site/2016/04/09/JVM-memory-area/&quot;&gt;JVM
+    
+    </summary>
+    
+      <category term="Java" scheme="http://blog.hotsky.site/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://blog.hotsky.site/tags/Java/"/>
+    
+      <category term="jvm" scheme="http://blog.hotsky.site/tags/jvm/"/>
+    
+      <category term="内存回收" scheme="http://blog.hotsky.site/tags/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/"/>
+    
+      <category term="回收对象" scheme="http://blog.hotsky.site/tags/%E5%9B%9E%E6%94%B6%E5%AF%B9%E8%B1%A1/"/>
+    
+      <category term="引用" scheme="http://blog.hotsky.site/tags/%E5%BC%95%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>JVM内存区域划分</title>
@@ -96,9 +128,9 @@
       <category term="shell" scheme="http://blog.hotsky.site/categories/shell/"/>
     
     
-      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
-    
       <category term="shell" scheme="http://blog.hotsky.site/tags/shell/"/>
+    
+      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
     
   </entry>
   
@@ -229,9 +261,9 @@
       <category term="Java" scheme="http://blog.hotsky.site/categories/Java/"/>
     
     
-      <category term="安装" scheme="http://blog.hotsky.site/tags/%E5%AE%89%E8%A3%85/"/>
-    
       <category term="Java" scheme="http://blog.hotsky.site/tags/Java/"/>
+    
+      <category term="安装" scheme="http://blog.hotsky.site/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="jdk" scheme="http://blog.hotsky.site/tags/jdk/"/>
     
@@ -275,13 +307,13 @@
       <category term="Hexo" scheme="http://blog.hotsky.site/categories/Hexo/"/>
     
     
+      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
+    
       <category term="Hexo" scheme="http://blog.hotsky.site/tags/Hexo/"/>
     
       <category term="安装" scheme="http://blog.hotsky.site/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="教程" scheme="http://blog.hotsky.site/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
     
   </entry>
   
