@@ -168,6 +168,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -335,10 +355,15 @@
       
         
           
-            <p>自动垃圾回收是Java相较于C++的一个重要的特点，想了解JVM的垃圾回收机制，首先我们要知道垃圾回收是回收什么地方的垃圾，我在我的上一篇博客《<a href="http://blog.hotsky.site/2016/04/09/JVM-memory-area/">JVM内存区域划分</a>》里面有写到JVM里面的内存是怎么分布的，这里的回收主要是指对上文中提到的Java堆和方法区的内存的回收。</p>
-<h3 id="什么样的对象可以被回收"><a href="#什么样的对象可以被回收" class="headerlink" title="什么样的对象可以被回收"></a>什么样的对象可以被回收</h3><p>知道了回收哪里的内存之后，我们还需要知道什么样的对象是可以被回收，或者说是需要被回收的，这些对象我们称之为死掉的对象。那么哪些对象是死掉了的呢？我们说当一个对象不存在任何引用的时候就可以说这个对象是死掉了。</p>
+          自动垃圾回收是Java相较于C++的一个重要的特点，想了解JVM的垃圾回收机制，首先我们要知道垃圾回收是回收什么地方的垃圾，我在我的上一篇博客《JVM内存区域划分》里面有写到JVM里面的内存是怎么分布的，这里的回收主要是指对上文中提到的Java堆和方法区的内存的回收。
+什么样的对象可以被回收知道了回
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/21/jvm-gc-objectreference/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1203,10 +1228,10 @@
 
           
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">categories</span>
-              
+              </a>
             </div>
           
 
@@ -1419,6 +1444,26 @@
   
   
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
   
 

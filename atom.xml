@@ -128,9 +128,9 @@
       <category term="shell" scheme="http://blog.hotsky.site/categories/shell/"/>
     
     
-      <category term="shell" scheme="http://blog.hotsky.site/tags/shell/"/>
-    
       <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
+    
+      <category term="shell" scheme="http://blog.hotsky.site/tags/shell/"/>
     
   </entry>
   
@@ -261,9 +261,9 @@
       <category term="Java" scheme="http://blog.hotsky.site/categories/Java/"/>
     
     
-      <category term="Java" scheme="http://blog.hotsky.site/tags/Java/"/>
-    
       <category term="安装" scheme="http://blog.hotsky.site/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="Java" scheme="http://blog.hotsky.site/tags/Java/"/>
     
       <category term="jdk" scheme="http://blog.hotsky.site/tags/jdk/"/>
     
@@ -307,13 +307,13 @@
       <category term="Hexo" scheme="http://blog.hotsky.site/categories/Hexo/"/>
     
     
-      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
-    
       <category term="Hexo" scheme="http://blog.hotsky.site/tags/Hexo/"/>
     
       <category term="安装" scheme="http://blog.hotsky.site/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="教程" scheme="http://blog.hotsky.site/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Setup" scheme="http://blog.hotsky.site/tags/Setup/"/>
     
   </entry>
   
