@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+@import url('http://fonts.googleapis.com/css?family=微软雅黑:300,400,700');
 @import url('http://cloud.typography.com/7234232/682202/css/fonts.css');
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
@@ -213,8 +213,9 @@ p.notis {
 }
 
 */
+
 h1 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 42px;
   font-weight: 400;
   line-height: 54px;
@@ -222,7 +223,7 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 54px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
 }
 h2.less-spacing {
@@ -232,21 +233,21 @@ h2.page-title {
   margin-bottom: 5px;
 }
 h3 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 31px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 1px;
 }
 h4 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 1px;
 }
 h5 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 21px;
   font-weight: 400;
   line-height: 29px;
@@ -256,51 +257,51 @@ h5.bold {
   font-weight: 500;
 }
 h6 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
 }
 h6.bold {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 500;
   line-height: 29px;
 }
 .sans {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 1px;
 }
 .sans2 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 1px;
 }
 .quote {
-  font-family: 'Merriweather', serif;
+  font-family: '微软雅黑', serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 58px;
 }
 p.ingress {
-  font-family: 'Merriweather', serif;
+  font-family: '微软雅黑', serif;
   font-size: 18px;
   font-weight: 200;
   line-height: 31px;
 }
 p {
-  font-family: 'Merriweather', serif;
+  font-family: '微软雅黑', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 23px;
 }
 p.notis {
-  font-family: 'Merriweather', serif;
+  font-family: '微软雅黑', serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 21px;
@@ -317,7 +318,7 @@ p.notis {
   border: 0px none #000000;
   padding: 10px 10px 5px 10px;
   margin-bottom: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: '微软雅黑', serif;
   font-size: 14px;
   font-weight: 200;
   position: relative;
@@ -360,7 +361,7 @@ p.notis {
 .circle-note {
   position: absolute;
   background: #f54641;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   width: 20px;
   height: 20px;
   border-radius: 10px 10px 10px 10px;
@@ -513,7 +514,7 @@ p.notis {
 .js-catalogFooterForm .form-wrap input,
 .callmeform.form-wrap input {
   width: 100%;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -527,7 +528,7 @@ p.notis {
 .callmeform.form-wrap textarea {
   width: 100%;
   min-height: 90px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 700;
   line-height: 29px;
@@ -640,7 +641,7 @@ p.notis {
 .catalog-popup .form-wrap input,
 .catalog-popup-module .form-wrap input {
   width: 100%;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -654,7 +655,7 @@ p.notis {
 .catalog-popup-module .form-wrap textarea {
   width: 100%;
   min-height: 90px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 700;
   line-height: 29px;
@@ -1257,7 +1258,7 @@ header nav#top_nav ul.no_margin_left {
   margin-left: 0;
 }
 header nav#top_nav ul li {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -1288,7 +1289,7 @@ header .top_search {
   text-align: left;
   border-bottom: 2px solid white;
   padding-bottom: 4px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
@@ -1350,7 +1351,7 @@ header .top_search #top_search_results .catalog .btn3 {
   margin-top: 10px;
 }
 header .top_search #top_search_results p {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -1387,7 +1388,7 @@ header .top_search input {
   width: 131px;
   color: white;
   margin-top: -1px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -1423,7 +1424,7 @@ header.expanded {
   -moz-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
-  /* 
+  /*
     a.brand {
         top:35px;
     }
@@ -1835,7 +1836,7 @@ body.closed .center h1 .wysiwyg-color-red {
 }
 #page-wrap.kontakt .contact_form input,
 #page-wrap.kontakt .contact_form textarea {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
 }
 #page-wrap.kontakt .contact_form .input-wrap {
@@ -2317,7 +2318,7 @@ body.closed .center h1 .wysiwyg-color-red {
   font-size: 15px;
   letter-spacing: 0px;
   line-height: 20px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 2px;
@@ -3368,7 +3369,7 @@ table.bottom-nav.col2 tr td.left i {
   font-size: 18px;
   letter-spacing: 0px;
   line-height: 24px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -3530,7 +3531,7 @@ table.bottom-nav.col2 tr td.left i {
   font-size: 36px;
   line-height: 54px;
   margin-left: 10px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
   background: none;
   border: none;
@@ -3877,7 +3878,7 @@ table.bottom-nav.col2 tr td.left i {
   padding-left: ;
   color: #494140;
   font-size: 36px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
   letter-spacing: 1px;
   background: #fff;
@@ -4203,7 +4204,7 @@ ul.big-list li ul li {
   width: 100%;
   background: #fff;
   font-size: 36px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0px;
@@ -4257,7 +4258,7 @@ ul.big-list li a {
   width: 100%;
   background: #fff;
   font-size: 36px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B';
+  font-family: '微软雅黑', 'Gotham Rounded B';
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -4367,7 +4368,7 @@ ul.big-list li.active i.dropdown-big {
             margin-bottom:30px;
         }
 
-        
+
     }
 }
 */
