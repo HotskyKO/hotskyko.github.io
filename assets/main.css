@@ -4394,6 +4394,7 @@ ul.big-list li.active i.dropdown-big {
    Footer -front
    ============================================== */
 footer {
+  font-family: '微软雅黑', 'Gotham Rounded B';
   width: 810px;
   padding-bottom: 20px;
   bottom: 20px;
