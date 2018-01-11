@@ -14,7 +14,7 @@ a:hover {
   color: #000;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1.5px solid #000;
 }
 
 .btn-default:hover,
@@ -22,7 +22,7 @@ a:hover {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #000;
-  border: 1px solid #000;
+  border: 1.5px solid #000;
 }
 
 
@@ -33,7 +33,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #fff;
 }
 body {
   color: #000;
@@ -118,6 +117,7 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+  border-radius: 0;
 }
 
 
